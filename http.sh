@@ -32,3 +32,5 @@ cd ../httpd-2.4.51
 sudo ./configure --prefix=/usr/local/apache2 --with-apr=/web/apr --with-apr-util=/web/aprutil --with-pcre=/web/pcre
 sudo make
 sudo make install
+
+sudo /usr/local/apache2/bin/apachectl start
