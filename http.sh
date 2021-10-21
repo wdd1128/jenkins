@@ -8,7 +8,7 @@ sudo wget https://downloads.apache.org/apr/apr-util-1.6.1.tar.gz
 sudo wget https://sourceforge.net/projects/pcre/files/pcre/8.45/pcre-8.45.tar.gz --no-check-certificate
 sudo wget https://downloads.apache.org/httpd/httpd-2.4.51.tar.gz
 
-if [ !-d /web/apr-1.7.0 ]
+if [ ! -d "/web/apr-1.7.0" ]
 then
 	echo "file not exsist"
 	sudo tar xzf apr-1.7.0.tar.gz
@@ -16,7 +16,7 @@ then
 	sudo tar xzf pcre-8.45.tar.gz
 	sudo tar xzf httpd-2.4.51.tar.gz
 else
-	echo"file exsist"
+	echo "file exsist"
 fi
 
 cd apr-1.7.0
